@@ -28,13 +28,21 @@
 <body>
     <div id="app">
         <div class="wrapper ">
-            @include('layouts.partial.sidebar')
+            @if(\Illuminate\Support\Facades\Request::is('admin*'))
+                @include('layouts.partial.sidebar')
+            @endif
+
             <div class="main-panel">
                 <!-- Navbar -->
-                    @include('layouts.partial.topbar')
+            @if(\Illuminate\Support\Facades\Request::is('admin*'))
+                @include('layouts.partial.topbar')
+            @endif
                 <!-- End Navbar -->
                 @yield('content')
-                @include('layouts.partial.footer')
+
+                @if(\Illuminate\Support\Facades\Request::is('admin*'))
+                    @include('layouts.partial.footer')
+                @endif
             </div>
         </div>
     </div>
