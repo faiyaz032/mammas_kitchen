@@ -4,7 +4,9 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Slider;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class SliderController extends Controller
 {
@@ -26,7 +28,7 @@ class SliderController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.slider.create');
     }
 
     /**
@@ -37,7 +39,33 @@ class SliderController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+            'title' => 'required',
+            'sub_title' => 'required',
+            'image' => 'required | mimes:jpeg,jpg,png'
+        ]);
+
+        $image = $request->file('image');
+        $slug = Str::slug($request->input('title'));
+        if (isset($image))
+        {
+            $currentDate = Carbon::now()->toDateString();
+            $imageName = $slug.'-'.$currentDate.'-'.uniqid().'.'.$image->getClientOriginalExtension();
+            if (!file_exists('uploads/slider'))
+            {
+                mkdir('uploads/slider', 0777, true);
+            }
+            $image->move('uploads/slider', $imageName);
+        }else{
+            $imageName = 'default.png';
+        }
+
+        $slider = new Slider();
+        $slider->title = $request->input('title');
+        $slider->sub_title = $request->input('sub_title');
+        $slider->image = $imageName;
+        $slider->save();
+        return redirect()->route('slider.index')->with('successMsg', 'Slider Successfully Added');
     }
 
     /**
