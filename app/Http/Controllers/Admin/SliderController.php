@@ -87,7 +87,8 @@ class SliderController extends Controller
      */
     public function edit($id)
     {
-        //
+         $slider = Slider::find($id);
+         return view('admin.slider.edit', compact('slider'));
     }
 
     /**
@@ -99,7 +100,33 @@ class SliderController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request,[
+            'title' => 'required',
+            'sub_title' => 'required',
+            'image' => 'mimes:jpeg,jpg,png'
+        ]);
+
+        $image = $request->file('image');
+        $slug = Str::slug($request->input('title'));
+        $slider = Slider::find($id);
+        if (isset($image))
+        {
+            $currentDate = Carbon::now()->toDateString();
+            $imageName = $slug.'-'.$currentDate.'-'.uniqid().'.'.$image->getClientOriginalExtension();
+            if (!file_exists('uploads/slider'))
+            {
+                mkdir('uploads/slider', 0777, true);
+            }
+            $image->move('uploads/slider', $imageName);
+        }else{
+            $imageName = $slider->image;
+        }
+
+        $slider->title = $request->input('title');
+        $slider->sub_title = $request->input('sub_title');
+        $slider->image = $imageName;
+        $slider->save();
+        return redirect()->route('slider.index')->with('successMsg', 'Slider Successfully Updated');
     }
 
     /**

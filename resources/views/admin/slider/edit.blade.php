@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Add New Slider')
+@section('title', 'Edit Slider')
 
 @push('css')
 
@@ -16,13 +16,14 @@
                             <h4 class="card-title ">Add New Slider</h4>
                         </div>
                         <div class="card-body">
-                            <form action="{{ route('slider.store') }}" method="post"     enctype="multipart/form-data">
+                            <form action="{{ route('slider.update', $slider->id) }}" method="post" enctype="multipart/form-data">
                                 @csrf
+                                @method('PUT')
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label class="bmd-label-floating">Title</label>
-                                            <input type="text" class="form-control" name="title">
+                                            <input type="text" class="form-control" name="title" value="{{ $slider->title }}">
                                         </div>
                                     </div>
                                 </div>
@@ -30,7 +31,7 @@
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label class="bmd-label-floating">Sub Title</label>
-                                            <input type="text" class="form-control" name="sub_title">
+                                            <input type="text" class="form-control" name="sub_title" value="{{ $slider->sub_title }}">
                                         </div>
                                     </div>
                                 </div>

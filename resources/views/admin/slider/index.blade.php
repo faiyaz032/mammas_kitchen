@@ -11,16 +11,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <a href="{{ route('slider.create') }}" class="btn btn-info">Add New</a>
-                    @if(session('successMsg'))
-                        <div class="alert alert-success">
-                            <button onclick="this.parentElement.style.display='none';" type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                <i class="material-icons">close</i>
-                            </button>
-                            <span>
-                                    {{ session('successMsg') }}
-                                </span>
-                        </div>
-                    @endif
+                    @include('layouts.partial.message')
                     <div class="card">
                         <div class="card-header card-header-primary">
                             <h4 class="card-title ">All Sliders</h4>
@@ -35,6 +26,7 @@
                                     <th>Image</th>
                                     <th>Created_At</th>
                                     <th>Updated_At</th>
+                                    <th>Action</th>
 
                                     </thead>
                                     <tbody>
@@ -46,6 +38,7 @@
                                                <td>{{ $slider->image }}</td>
                                                <td>{{ $slider->created_at }}</td>
                                                <td>{{ $slider->updated_at }}</td>
+                                               <td><a href="{{ route('slider.edit', $slider->id) }}" class="btn btn-info btn-sm">Edit</a></td>
                                            </tr>
                                        @endforeach
                                     </tbody>
