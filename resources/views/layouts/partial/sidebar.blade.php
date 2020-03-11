@@ -21,6 +21,12 @@
                     <p>Sliders</p>
                 </a>
             </li>
+            <li class="nav-item {{ \Illuminate\Support\Facades\Request::is('admin/category*') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('category.index') }}">
+                    <i class="material-icons">category</i>
+                    <p>Category</p>
+                </a>
+            </li>
             <li class="nav-item ">
                 <a class="nav-link" href="./tables.html">
                     <i class="material-icons">content_paste</i>
