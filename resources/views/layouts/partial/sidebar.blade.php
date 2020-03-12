@@ -27,6 +27,12 @@
                     <p>Category</p>
                 </a>
             </li>
+            <li class="nav-item {{ \Illuminate\Support\Facades\Request::is('admin/item*') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('item.index') }}">
+                    <i class="material-icons">fastfood</i>
+                    <p>Items</p>
+                </a>
+            </li>
             <li class="nav-item ">
                 <a class="nav-link" href="./tables.html">
                     <i class="material-icons">content_paste</i>
