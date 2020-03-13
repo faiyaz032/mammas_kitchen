@@ -105,10 +105,9 @@ class SliderController extends Controller
             'sub_title' => 'required',
             'image' => 'mimes:jpeg,jpg,png'
         ]);
-
+        $slider = Slider::find($id);
         $image = $request->file('image');
         $slug = Str::slug($request->input('title'));
-        $slider = Slider::find($id);
         if (isset($image))
         {
             $currentDate = Carbon::now()->toDateString();
@@ -117,7 +116,8 @@ class SliderController extends Controller
             {
                 mkdir('uploads/slider', 0777, true);
             }
-            $image->move('uploads/slider', $imageName);
+            unlink('uploads/slider/'.$slider->image);
+            $image->move('uploads/slider/',$imageName);
         }else{
             $imageName = $slider->image;
         }

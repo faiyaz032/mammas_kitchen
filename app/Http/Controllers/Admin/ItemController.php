@@ -95,7 +95,9 @@ class ItemController extends Controller
      */
     public function edit($id)
     {
-        //
+        $categories = Category::all();
+        $item = Item::find($id);
+        return view('admin.item.edit', compact('item', 'categories'));
     }
 
     /**
@@ -107,9 +109,40 @@ class ItemController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
-    }
+        $this->validate($request,[
+            'name' => 'required',
+            'category' => 'required',
+            'price' => 'required',
+            'description' => 'required'
 
+        ]);
+        $item = Item::find($id);
+        $image = $request->file('image');
+        $slug = Str::slug($request->input('name'));
+
+        if (isset($image))
+        {
+            $currentDate = Carbon::now()->toDateString();
+            $imageName = $slug.'-'.$currentDate.'-'.uniqid().'.'.$image->getClientOriginalExtension();
+            if (!file_exists('uploads/items'))
+            {
+                mkdir('uploads/items', 0777 , true);
+            }
+            unlink('uploads/items/'.$item->image);
+            $image->move('uploads/items',$imageName);
+        }else{
+            $imageName = $item->image;
+        }
+
+
+        $item->name = $request->input('name');
+        $item->category_id = $request->input('category');
+        $item->price = $request->input('price');
+        $item->description = $request->input('description');
+        $item->image = $imageName;
+        $item->save();
+        return redirect()->route('item.index')->with('successMsg', 'Item Successfully Added');
+    }
     /**
      * Remove the specified resource from storage.
      *
@@ -118,6 +151,12 @@ class ItemController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $item = Item::find($id);
+        if (file_exists('uploads/items/'.$item->image))
+        {
+            unlink('uploads/items/'.$item->image);
+        }
+        $item->delete();
+        return redirect()->back()->with('successMsg', 'Item Successfully Deleted');
     }
 }

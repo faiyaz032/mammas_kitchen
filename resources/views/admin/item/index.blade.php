@@ -37,7 +37,7 @@
                                             <td>{{ $item->name }}</td>
                                             <td>{{ $item->category->name }}</td>
                                             <td>{{ $item->price }}</td>
-                                            <td>{{ $item->image }}</td>
+                                            <td><img src="{{ asset('uploads/items/'.$item->image) }}" class="img-fluid img-thumbnail img-responsive" width="100" height="100" alt=""></td>
                                             <td>{{ $item->created_at }}</td>
                                             <td>{{ $item->updated_at }}</td>
                                             <td>
