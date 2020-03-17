@@ -33,10 +33,10 @@
                     <p>Items</p>
                 </a>
             </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="./tables.html">
-                    <i class="material-icons">content_paste</i>
-                    <p>Table List</p>
+            <li class="nav-item {{ \Illuminate\Support\Facades\Request::is('admin/reservation*') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('reservation.index') }}">
+                    <i class="material-icons">bookmark</i>
+                    <p>Reservation</p>
                 </a>
             </li>
             <li class="nav-item ">
