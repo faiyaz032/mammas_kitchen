@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index')->name('welcome');
 Route::post('/reservation', 'ReservationController@reserve')->name('reservation.reserve');
-Route::post('/contact', 'ReservationController@reserve')->name('reservation.reserve');
+Route::post('/contact', 'ContactController@sendMessage')->name('contact.send');
 
 Auth::routes(['register' => false]);
 
@@ -29,7 +29,10 @@ Route::group(['prefix'=>'admin', 'middleware'=>'auth', 'namespace'=>'admin'], fu
 
     Route::get('reservation','ReservationController@index')->name('reservation.index');
     Route::post('reservation/{id}','ReservationController@status')->name('reservation.status');
-    Route::delete('reservation/{id}','ReservationController@destory')->name('reservation.destory');
+    Route::delete('reservation/{id}','ReservationController@destory')->name('reservation.destroy');
+
+    Route::get('contact','ContactController@index')->name('contact.index');
+    Route::delete('contact/$id','ContactController@destroy')->name('contact.destroy');
 
 });
 

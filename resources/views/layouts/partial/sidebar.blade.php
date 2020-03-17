@@ -39,6 +39,12 @@
                     <p>Reservation</p>
                 </a>
             </li>
+            <li class="nav-item {{ \Illuminate\Support\Facades\Request::is('admin/contact*') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('contact.index') }}">
+                    <i class="material-icons">contact_mail</i>
+                    <p>Contacts</p>
+                </a>
+            </li>
             <li class="nav-item ">
                 <a class="nav-link" href="./typography.html">
                     <i class="material-icons">library_books</i>

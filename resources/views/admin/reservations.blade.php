@@ -59,7 +59,7 @@
                                                         event.preventDefault();
                                                         }"><i class="material-icons">done</i></button>
                                                 @endif
-                                                <form id="delete-form-{{ $reservation->id }}" action="{{ route('reservation.destory',$reservation->id) }}" style="display: none;" method="POST">
+                                                <form id="delete-form-{{ $reservation->id }}" action="{{ route('reservation.destroy',$reservation->id) }}" style="display: none;" method="POST">
                                                     @csrf
                                                     @method('DELETE')
                                                 </form>

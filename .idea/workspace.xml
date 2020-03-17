@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6948d464-cabf-4b34-8cb3-7bf8e917ec81" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReservationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReservationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3216c4dc-f335-45c6-8927-3ad13383eb9d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3216c4dc-f335-45c6-8927-3ad13383eb9d.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_17_100658_create_contacts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_17_100658_create_contacts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/reservations.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/reservations.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/partial/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/partial/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,7 +53,7 @@
     <session id="-1404566066">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="2" />
@@ -74,12 +75,13 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="categories" value="2" />
+          <entry key="contacts" value="1" />
           <entry key="css" value="1" />
           <entry key="env" value="2" />
           <entry key="items" value="2" />
           <entry key="js" value="1" />
           <entry key="migrations" value="1" />
-          <entry key="php" value="118" />
+          <entry key="php" value="128" />
           <entry key="reservations" value="2" />
           <entry key="sliders" value="1" />
           <entry key="sql" value="1" />
@@ -89,11 +91,11 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="2" />
-          <entry key="Blade" value="65" />
+          <entry key="Blade" value="72" />
           <entry key="CSS" value="1" />
-          <entry key="Database Element" value="9" />
+          <entry key="Database Element" value="10" />
           <entry key="JavaScript" value="1" />
-          <entry key="PHP" value="53" />
+          <entry key="PHP" value="56" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
@@ -102,17 +104,17 @@
           <entry key="css" value="2" />
           <entry key="env" value="5" />
           <entry key="js" value="20" />
-          <entry key="php" value="8655" />
+          <entry key="php" value="9379" />
           <entry key="txt" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="5" />
-          <entry key="Blade" value="4497" />
+          <entry key="Blade" value="4643" />
           <entry key="CSS" value="2" />
           <entry key="JavaScript" value="20" />
-          <entry key="PHP" value="4158" />
+          <entry key="PHP" value="4736" />
           <entry key="PLAIN_TEXT" value="32" />
         </counts>
       </usages-collector>
@@ -120,65 +122,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="686">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="504">
+              <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Notifications/ReservationConfirmed.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ContactController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1092">
-              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/mail.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="84" column="47" selection-start-line="84" selection-start-column="47" selection-end-line="84" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ReservationController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+            <state relative-caret-position="442">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               <folding>
-                <element signature="e#46#82#0#PHP" expanded="true" />
+                <element signature="e#46#62#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ContactController.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/partial/sidebar.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="891">
+              <caret line="43" column="58" selection-start-line="43" selection-start-column="58" selection-end-line="43" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://3216c4dc-f335-45c6-8927-3ad13383eb9d/schema/mammas_kitchen/table/reservations">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/contact/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/reservations.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="62">
+              <caret line="61" column="131" selection-start-line="61" selection-start-column="131" selection-end-line="61" selection-end-column="131" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://3216c4dc-f335-45c6-8927-3ad13383eb9d/schema/mammas_kitchen/table/contacts">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -252,19 +245,22 @@
         <option value="$PROJECT_DIR$/database/migrations/2020_03_14_080610_create_reservations_table.php" />
         <option value="$PROJECT_DIR$/config/toastr.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/partial/message.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ReservationController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/reservetions.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/partial/sidebar.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/reservations.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ReservationController.php" />
         <option value="$PROJECT_DIR$/app/Notifications/ReservationConfirmed.php" />
         <option value="$PROJECT_DIR$/config/mail.php" />
         <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_03_17_100658_create_contacts_table.php" />
+        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ContactController.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/partial/sidebar.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/contact/index.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/reservations.blade.php" />
       </list>
     </option>
   </component>
@@ -429,7 +425,9 @@
               <item name="mammas_kitchen" type="b2602c69:ProjectViewProjectNode" />
               <item name="mammas_kitchen" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Notifications" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mammas_kitchen" type="b2602c69:ProjectViewProjectNode" />
@@ -460,7 +458,7 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="item" type="462c0819:PsiDirectoryNode" />
+              <item name="category" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mammas_kitchen" type="b2602c69:ProjectViewProjectNode" />
@@ -536,16 +534,15 @@
       <workItem from="1584113324453" duration="6674000" />
       <workItem from="1584173087508" duration="3758000" />
       <workItem from="1584365359552" duration="7023000" />
-      <workItem from="1584434953647" duration="1560000" />
+      <workItem from="1584434953647" duration="3823000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55072000" />
+    <option name="totallyTimeSpent" value="57335000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15671642" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -577,37 +574,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
@@ -678,13 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="624">
           <caret line="24" column="88" lean-forward="true" selection-start-line="24" selection-start-column="88" selection-end-line="24" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/category/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="39" column="111" lean-forward="true" selection-start-line="39" selection-start-column="111" selection-end-line="39" selection-end-column="111" />
         </state>
       </provider>
     </entry>
@@ -807,13 +766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="818" column="30" selection-start-line="818" selection-start-column="30" selection-end-line="818" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/partial/message.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -828,34 +780,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/dashboard.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="114" column="86" selection-start-line="114" selection-start-column="86" selection-end-line="114" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/partial/sidebar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="962">
-          <caret line="37" column="54" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/reservations.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ReservationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -894,13 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ReservationController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -911,17 +828,106 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_03_17_100658_create_contacts_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ReservationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="30" column="34" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="30" selection-end-column="34" />
+          <folding>
+            <element signature="e#40#60#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/contact.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/category/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="39" column="111" lean-forward="true" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://3216c4dc-f335-45c6-8927-3ad13383eb9d/schema/mammas_kitchen/table/contacts">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/dashboard.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2366">
+          <caret line="112" column="17" lean-forward="true" selection-start-line="112" selection-start-column="17" selection-end-line="112" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ContactController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="364">
+          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          <folding>
+            <element signature="e#40#56#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="756" column="95" selection-start-line="756" selection-start-column="90" selection-end-line="756" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/partial/sidebar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="891">
+          <caret line="43" column="58" selection-start-line="43" selection-start-column="58" selection-end-line="43" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ContactController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#46#62#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="686">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="504">
+          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/contact/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/reservations.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="61" column="131" selection-start-line="61" selection-start-column="131" selection-end-line="61" selection-end-column="131" />
         </state>
       </provider>
     </entry>
